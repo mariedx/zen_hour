@@ -10,9 +10,38 @@ html, body {
 /*jumbotron*/
 .jumbotron {
   position: relative;
-  height: 65vh;
+  height: 85vh;
   background-size: cover;
-  background-position-y: 68%;
+  background-position-y: 86%;
   opacity: 0.8;
-  background-image: url(<%= asset_path 'bamboo.webp' %>);
+  background-image: url(<%= asset_path 'lotus2.jpeg' %>);
+}
+
+.area-jumbotron {
+  margin: 7% 55% 10% 5%;
+
+  a {
+    margin: 5px 0;
+  }
+}
+
+.header-jumbotron {
+  color: white;
+  font-size: calc(24px + 2vw;);
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 650px) {
+  .background-image {
+    background-position-x: 55%;
+  }
+
+  .area-jumbotron {
+  margin: 10% 20% 10% 5%;
+    a {
+      margin: 15px 0;
+      font-size: 1.2rem;
+    }
+  }
 }

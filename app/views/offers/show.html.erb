@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <h5 class="mb-5"> <%= @offer.title %> </h5>
+  <h5 class="mb-5"> <%= @offer.description %> </h5>
+  <h5 class="mb-5"> <%= @offer.duration %> </h5>
+  <h5 class="mb-5"> <%= @offer.price %> </h5>
+<div>
+
+<%= link_to 'Modifier', edit_offer_path(@offer) %> |
+<%= link_to 'Retour', offers_path %>

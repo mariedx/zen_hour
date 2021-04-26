@@ -1,7 +1,5 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light px-4 py-2"> 
-  <div class="logo">
-    <h2>Zen Hour</h2>
-  </div>
+  <%= link_to "Zen Hour", root_path, :class => "nav-logo" %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,18 +7,10 @@
 
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#presentation">A Propos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#services">Formules et Tarifs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#services">Réserver en ligne</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#feedbacks">Témoignages</a>
-      </li>
+      <li><%= link_to "A propos", static_pages_about_path, :class => "nav-item nav-link" %></li>
+      <li><%= link_to "Formules et tarifs", offers_path, :class => "nav-item nav-link" %></li>
+      <li><%= link_to "Témoignages", static_pages_feedbacks_path, :class => "nav-item nav-link" %></li>
+      <li><%= link_to "Réserver en ligne", "https://calendly.com/liana-enbarque/1er-rendez-vous-faisons-connaissance?month=2021-02", :class => "nav-item nav-link", target: :_blank %></li>
     </ul>
   </div>
 </nav>

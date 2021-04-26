@@ -1,0 +1,22 @@
+// Place all the styles related to the Offers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.offers-index {
+  margin: 8% 10%;
+}
+
+.offers-card {
+  margin: 5% auto;
+  padding: 5%;
+  height: auto;
+  width: 50vh;
+  border: 1px grey solid;
+  border-radius: 3px;
+}
+
+.offers-edition {
+  display: flex;
+  justify-content: space-around;
+  padding: 8% 25%;
+}

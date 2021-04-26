@@ -1,0 +1,29 @@
+<div class="offers-index">
+  <h1>Formules et Tarifs</h1>
+
+  <div class="row">
+    <% @offers.each do |offer| %>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="offers-card card h-100">
+
+          <h3> <%= offer.title %> </h3>
+          <h4> <%= offer.description %> </h4>
+          <h4> <%= offer.duration %> H </h4>
+          <h4> <%= offer.price %> € </h4>
+
+          <div class="offers-edition mt-auto">
+          <%= link_to edit_offer_path(offer) do %>
+            <i class="fas fa-edit"></i>
+          <% end %>
+          <%= link_to offer, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+          </div>
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <br>
+  <%= link_to 'New Offer', new_offer_path %>
+<div>

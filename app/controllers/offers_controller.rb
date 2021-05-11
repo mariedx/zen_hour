@@ -64,6 +64,6 @@ class OffersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def offer_params
-      params.require(:offer).permit(:title, :description, :duration, :price)
+      params.require(:offer).permit(:title, :description, :duration, :price, :image_url)
     end
 end

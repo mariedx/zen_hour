@@ -1,29 +1,22 @@
 <div class="offers-index">
-  <h1>Formules et Tarifs</h1>
+  <h2>Formules et Tarifs</h2>
 
   <div class="row">
     <% @offers.each do |offer| %>
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-12 col-md-6 mb-4">
         <div class="offers-card card h-100">
-
-          <h3> <%= offer.title %> </h3>
-          <h4> <%= offer.description %> </h4>
-          <h4> <%= offer.duration %> H </h4>
-          <h4> <%= offer.price %> € </h4>
-
-          <div class="offers-edition mt-auto">
-          <%= link_to edit_offer_path(offer) do %>
-            <i class="fas fa-edit"></i>
-          <% end %>
-          <%= link_to offer, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <i class="fas fa-trash-alt"></i>
-          <% end %>
+          <%= image_tag "#{offer.image_url}", :class => "card-img-index" %>
+          <div class="card-body text-center d-flex flex-column px-4">
+            <h3 class="card-title py-4"> <%= offer.title %> </h3>
+            <p class="card-description px-4"> <%= offer.description %> </p>
+            <p>Durée : <%= offer.duration %> H</p>
+            <p class="card-price">Prix : <%= offer.price %> €</p>
+            <div class="button-card mt-auto">
+              <%= link_to "En savoir plus", offer_path(offer) , class:"btn btn-outline-secondary btn-sm" %>
+            </div>
           </div>
-
         </div>
       </div>
     <% end %>
   </div>
-  <br>
-  <%= link_to 'New Offer', new_offer_path %>
-<div>
+</div>

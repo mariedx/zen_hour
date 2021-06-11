@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'static_pages/feedbacks'
 
   resources :offers
+  resources :messages, only: %i[new create]
 
 end

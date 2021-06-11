@@ -4,7 +4,7 @@
     <h2>Prenons contact</h2>
     <br><br>
 
-    <%= form_for :message, url: root_path do |f| %>
+    <%= form_for :message, url: messages_path do |f| %>
       <article>
         <% if flash[:error].present? %>
           <div id="error_explanation">
@@ -16,7 +16,7 @@
       <div class="row">
         <div class="col-sm-5 image-contact">
         <br>
-        <%= image_tag("candle.jpeg", :class => "img-center", alt: "bougie") %>
+        <%= image_tag("tea.jpeg", :class => "img-center", alt: "bougie") %>
         </div>
         
         <div class="col-sm-7">

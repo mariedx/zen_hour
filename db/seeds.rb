@@ -12,7 +12,7 @@ Offer.create!(
   title: "Séance d'hypnose individuelle",
   description: "Discussion autour vos besoins et vos objectifs, entrée dans l'état hypnotique, temps consacré aux questions, à la description des sensations ressenties lors de la séance, mais aussi aux prochains objectifs à atteindre.",
   duration: "1",
-  image_url: "nature.jpeg",
+  image_url: "nature.jpg",
   price: 80
 );
 

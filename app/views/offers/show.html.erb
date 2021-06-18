@@ -1,11 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container">
-  <h5 class="mb-5"> <%= @offer.title %> </h5>
-  <h5 class="mb-5"> <%= @offer.description %> </h5>
-  <h5 class="mb-5"> <%= @offer.duration %> </h5>
-  <h5 class="mb-5"> <%= @offer.price %> </h5>
-<div>
+<div class="offers-show">
+  <h2 class="text-center mb-5"> <%= @offer.title %> </h2>
+  <div class="row">
+    <div class="col-12 col-md-5">
+      <%= image_tag "#{@offer.image_url}", :class => "card-img-show mx-4" %>
+    </div>
 
-<%= link_to 'Modifier', edit_offer_path(@offer) %> |
-<%= link_to 'Retour', offers_path %>
+    <div class="col-12 col-md-7">
+      <div class="mx-4">
+        <p class="mb-4"> <%= @offer.description %> </p>
+        <h5 class="mb-4"> Prix : <%= @offer.price.round %> €</h5>
+
+        <div class="details my-4">
+          <% if @offer.title.include? "individuelle" %>
+            <%= render "individual" %>
+          <% else %>
+            <%= render "group" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

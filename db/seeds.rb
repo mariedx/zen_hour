@@ -11,7 +11,6 @@ Offer.destroy_all
 Offer.create!(
   title: "Séance d'hypnose individuelle",
   description: "Discussion autour vos besoins et vos objectifs, entrée dans l'état hypnotique, temps consacré aux questions, à la description des sensations ressenties lors de la séance, mais aussi aux prochains objectifs à atteindre.",
-  duration: "1",
   image_url: "nature.jpg",
   price: 80
 );
@@ -20,4 +19,5 @@ Offer.create!(
   title: "Hypnothérapie en équipe",
   description: "Séances collectives pour les entreprises autour  de la prise de parole en public, de la gestion du stress et des émotions, de la faciliation de la communication et cohésion de groupe.",
   image_url: "teams.jpg",
+  price: 300
 );

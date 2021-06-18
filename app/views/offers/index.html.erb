@@ -9,8 +9,7 @@
           <div class="card-body text-center d-flex flex-column px-4">
             <h3 class="card-title py-4"> <%= offer.title %> </h3>
             <p class="card-description px-4"> <%= offer.description %> </p>
-            <p>Durée : <%= offer.duration %> H</p>
-            <p class="card-price">Prix : <%= offer.price %> €</p>
+            <p class="card-price">Prix : <%= offer.price.round %> € / heure</p>
             <div class="button-card mt-auto">
               <%= link_to "En savoir plus", offer_path(offer) , class:"btn btn-outline-secondary btn-sm" %>
             </div>

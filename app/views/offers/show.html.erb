@@ -4,11 +4,11 @@
   <h2 class="text-center mb-5"> <%= @offer.title %> </h2>
   <div class="row">
     <div class="col-12 col-md-5">
-      <%= image_tag "#{@offer.image_url}", :class => "card-img-show mx-4" %>
+      <%= image_tag "#{@offer.image_url}", :class => "card-img-show" %>
     </div>
 
     <div class="col-12 col-md-7">
-      <div class="mx-4">
+      <div class="offers-description">
         <p class="mb-4"> <%= @offer.description %> </p>
         <h5 class="mb-4"> Prix : <%= @offer.price.round %> €</h5>
 

@@ -53,3 +53,9 @@
   object-fit: cover;
   opacity: 0.9;
 }
+
+@media screen and (max-width: 650px) {
+  .card-img-show {
+    max-height: 40vh;
+  }
+}  

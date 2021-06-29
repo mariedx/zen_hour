@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
       flash[:success] = "Votre message a bien été envoyé !"
       redirect_to root_path
     else
-      flash[:danger] = "Votre message n'a pas pu être envoyé. Réessayez, ou contactez-moi à liana.mikael@enbarque-orientation.com"
+      flash[:danger] = "Votre message n'a pas pu être envoyé. Réessayez, ou contactez-moi à belleph94@gmail.com"
       redirect_to root_path
     end
   end

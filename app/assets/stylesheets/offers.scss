@@ -46,15 +46,24 @@
   margin: 5% 10%;
 }
 
+.offers-description {
+  padding: 0 5%;
+}
+
 .card-img-show {
   height: 70vh;
   width: auto;
   max-width: 100%;
   object-fit: cover;
   opacity: 0.9;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 650px) {
+  .offers-description {
+    padding: 10% 0;
+  }
+
   .card-img-show {
     max-height: 40vh;
   }

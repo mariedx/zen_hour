@@ -1,21 +1,34 @@
 <div class="offers-index">
   <h2>Formules et Tarifs</h2>
-
+  
   <div class="row">
-    <% @offers.each do |offer| %>
-      <div class="col-12 col-md-6 mb-4">
-        <div class="offers-card card h-100">
-          <%= image_tag "#{offer.image_url}", :class => "card-img-index" %>
-          <div class="card-body text-center d-flex flex-column px-4">
-            <h3 class="card-title py-4"> <%= offer.title %> </h3>
-            <p class="card-description px-4"> <%= offer.description %> </p>
-            <p class="card-price">Prix : <%= offer.price.round %> € / heure</p>
-            <div class="button-card mt-auto">
-              <%= link_to "En savoir plus", offer_path(offer) , class:"btn btn-outline-secondary btn-sm" %>
-            </div>
+    <div class="col-12 col-lg-6 mb-5">
+      <div class="offers-card card h-100">
+        <%= image_tag("nature.jpeg", :class => "card-img-index" ) %>
+        <div class="card-body text-center d-flex flex-column px-4">
+          <h3 class="card-title py-3">Séance d'hypnose individuelle</h3>
+          <p class="card-description">Discussion autour vos besoins et vos objectifs, entrée dans l'état hypnotique, temps consacré aux questions, à la description des sensations ressenties lors de la séance, mais aussi aux prochains objectifs à atteindre.</p>
+          <p class="card-price">Prix : 80 € / heure</p>
+          <div class="button-card mt-auto">
+            <a href=# target="_blank" class="btn btn-outline-secondary btn-sm">Prendre RDV</a>
           </div>
         </div>
       </div>
-    <% end %>
+    </div>
+
+    <div class="col-12 col-lg-6 mb-5">
+      <div class="offers-card card h-100">
+        <%= image_tag("teams.jpeg", :class => "card-img-index" ) %>
+        <div class="card-body text-center d-flex flex-column px-4">
+          <h3 class="card-title py-3">Hypnothérapie en équipe</h3>
+          <p class="card-description">Séances collectives pour les entreprises autour de la prise de parole en public, de la gestion du stress et des émotions, de la faciliation de la communication et cohésion de groupe.</p>
+          <p class="card-price">Prix : 300 € / heure</p>
+          <div class="button-card mt-auto">
+            <a href=# target="_blank" class="btn btn-outline-secondary btn-sm">Prendre RDV</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<hr>

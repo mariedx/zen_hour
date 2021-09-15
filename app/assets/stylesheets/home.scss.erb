@@ -55,6 +55,32 @@ html, body {
   font-size: calc(24px + 2vw;);
 }
 
+@media screen and (max-width: 1200px) {
+  .background-image {
+    height: 49vh;
+    background-position-x: 50%;
+  }
+
+  .area-jumbotron {
+    margin: 10% 5% 10% 5%;
+    a {
+      margin: 15px 0;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .background-image {
+    height: 92vh;
+    background-position-x: 50%;
+  }
+
+  .header-jumbotron {
+    font-size: 2.7rem;
+  }
+}
+
 /*descriptions*/
 .description {
   margin: 5% 0;
@@ -75,25 +101,6 @@ html, body {
   height: 80px;
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 650px) {
-  .background-image {
-    background-position-x: 50%;
-  }
-
-  .header-jumbotron {
-    font-size: 2.7rem;
-  }
-
-  .area-jumbotron {
-  margin: 10% 15% 10% 5%;
-    a {
-      margin: 15px 0;
-      font-size: 1.2rem;
-    }
-  }
-}
-
 /*contact*/
 .contact-page {
   background-color: #F7F7F9;
@@ -103,26 +110,26 @@ html, body {
   margin-bottom: 5%
 }
 
-
-.image-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .img-center {
-  width: 46vh;
+  width: 42vh;
   height: auto;
   border-radius: 5px;
+  margin-left: 15%;
 }
 
-@media screen and (max-width: 650px) {
-.contact-title {
-  margin-bottom: 2%
-}
+@media screen and (max-width: 1200px) {
+  .contact-title {
+    margin-bottom: 8%
+  }
 
- .img-center {
-  padding: 10% 6%;  
-  border-radius: 7%;
- }
+  .img-center {
+    width: 50vh;
+    margin-left: 0;
+    margin-top: 10%
+  }
+
+  .lead-text {
+  letter-spacing: 0.1rem;
+  margin: 0 8%;
+}
 }

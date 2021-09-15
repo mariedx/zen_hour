@@ -26,6 +26,10 @@
   opacity: 0.9;
 }
 
+.card-description {
+  padding: 0 10%;
+}
+
 .card-price {
   margin-bottom: -5%;
 }
@@ -34,37 +38,18 @@
   margin-bottom: 10px;
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
   .card-img-index {
     max-height: 40vh;
   }
+
+  .card-description {
+    padding: 0 3%;
+  }
 }  
 
-/*Show*/
-.offers-show {
-  margin: 5% 10%;
-}
-
-.offers-description {
-  padding: 0 5%;
-}
-
-.card-img-show {
-  height: 70vh;
-  width: auto;
-  max-width: 100%;
-  object-fit: cover;
-  opacity: 0.9;
-  border-radius: 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .offers-description {
-    padding: 10% 0;
-  }
-
-  .card-img-show {
-    max-height: 40vh;
+@media screen and (max-width: 400px) {
+  .card-description {
+    padding: 0;
   }
 }  

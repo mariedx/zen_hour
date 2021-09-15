@@ -1,0 +1,54 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/*about*/
+.about {
+  margin: 5% 10%;}
+
+.image_about {
+  position: relative;
+  height: 58vh;
+  background-size: cover;
+  background-position-y: 90%;
+  opacity: 0.8;
+  background-image: url(<%= asset_path 'flowers.jpeg' %>);
+  background-attachment: fixed;
+}
+
+.presentation-area {
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    margin: 10% 6%;
+  }
+  
+  .image_about {
+    background-attachment: scroll;
+    background-position-x: 45%;
+    height: 45vh;
+  }
+
+  .how-session {
+    margin: 7% 0;
+  }
+
+  .presentation-area {
+    margin-top: 0;
+  }
+}
+
+
+/*feedbacks*/
+.feedbacks {
+  margin: 5% 10%;
+}
+
+.img_feedback {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
